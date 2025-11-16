@@ -51,8 +51,17 @@ footer {
     box-shadow: 0 0 25px rgba(0,0,0,0.4);
 }
 
+.poop-img {
+    width: 100px;
+}
+
 figure {
-    border: 1px #cccccc solid;
-    padding: 4px;
-    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 8px;
 }
