@@ -53,6 +53,11 @@ footer {
 
 .poop-img {
     width: 100px;
+    height: auto;
 }
 
+figure {
+    display: inline-block;
+    text-align: center;
+}
 
