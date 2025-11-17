@@ -3,52 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>Alim's First Website</title>
-    <link rel="stylesheet" href="style.css">  <!-- Tab Icon -->
-    <link rel="icon" type="image/png" href="images/favicon.png"> <!-- Tab Icon -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
 
 <div class="center-box">
 
-    <header>
-        Alim Zhaku's Website
+    <header class="site-header">
+        <div class="logo">Alim Zhaku</div>
+
+        <nav class="nav">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="mailto:example@email.com" class="nav-cta">Say Hi</a>
+        </nav>
     </header>
 
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
     <main>
-        <h1>Welcome!</h1>
-        <p>This is a basic website just to show layout, styling, and structure.</p>
-        <p>hi test</p>
-        <p>Add whatever you want here — images, lists, buttons, etc.</p>
-        <p>Add whatever you want here — images, lists, buttons, etc.</p>
-        <p>Add whatever you want here — images, lists, buttons, etc.</p>
-        <p>Add whatever you want here — images, lists, buttons, etc.</p>
-        <p>Add whatever you want here — images, lists, buttons, etc.</p>
-        <p>Add whatever you want here — images, lists, buttons, etc.</p>
-        <p>Add whatever you want here — images, lists, buttons, etc.</p>
+        <section class="hero">
+            <h1>Welcome to my first website.</h1>
+            <p>
+                I’m learning HTML, CSS, and how the web actually works.
+                This page is my sandbox while I mess around with layouts, styling, and structure.
+            </p>
 
-        <figure>
-            <img src="images/poop.png" class="poop-img" alt="Hi" >
-            <figcaption>Poop emjoi</figcaption>
-        </figure>
+            <div class="hero-tags">
+                <span class="tag">CS Student</span>
+                <span class="tag">Java Enjoyer</span>
+                <span class="tag">Trying Web Dev</span>
+            </div>
+        </section>
 
+        <section class="content-grid">
+            <div class="card">
+                <h2>What this is</h2>
+                <p>
+                    A simple static site hosted on GitHub Pages. No frameworks, no libraries,
+                    just raw HTML + CSS so I actually understand what’s going on.
+                </p>
+            </div>
 
+            <div class="card">
+                <h2>What I’m learning</h2>
+                <ul>
+                    <li>Basic page structure (HTML)</li>
+                    <li>Styling and layout (CSS)</li>
+                    <li>How to host a site on GitHub</li>
+                </ul>
+            </div>
+
+            <div class="card image-card">
+                <figure>
+                    <img src="images/poop.png" class="poop-img" alt="Poop emoji">
+                    <figcaption>First ever image on this site.</figcaption>
+                </figure>
+            </div>
+        </section>
     </main>
 
-
-    <footer>
-        &copy; 2024 My Website
+    <footer class="site-footer">
+        &copy; 2024 Alim Zhaku • Hosted on GitHub Pages
     </footer>
 
-
-
 </div>
+
 </body>
 </html>

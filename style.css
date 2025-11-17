@@ -1,63 +1,191 @@
+/* ====== Base layout ====== */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #1e1e1e;
+    background: #0f1012;
+    color: #e0e0e0;
 }
 
-header {
-    background: #2a2a2a;
+/* Centered card */
+
+.center-box {
+    max-width: 960px;
+    margin: 60px auto;
+    background: #121212;
+    padding: 32px 40px;
+    border-radius: 12px;
+    border: 1px solid #2e2e2e;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.6);
+}
+
+/* ====== Header / Nav ====== */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #2a2a2a;
+    margin-bottom: 24px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    font-size: 35px;
 }
 
-nav {
-    background: #272727;
-    padding: 10px;
-    font-size: 20px;
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
 }
 
-nav a {
+.nav-link {
     color: #cccccc;
-    margin-right: 15px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: color 0.2s ease, background 0.2s ease;
 }
+
+.nav-link:hover {
+    background: #1f1f1f;
+    color: #ffffff;
+}
+
+.nav-link.active {
+    background: #1f1f1f;
+    color: #ffffff;
+}
+
+.nav-cta {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #4fc3f7;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.nav-cta:hover {
+    background: #72d8ff;
+    transform: translateY(-1px);
+}
+
+/* ====== Main content ====== */
 
 main {
-    padding: 20px;
     color: #d8d8d8;
 }
 
-footer {
-    background: #2a2a2a;
-    color: #bbbbbb;
-    text-align: center;
-    padding: 10px;
-    margin-top: 40px;
+/* Hero section */
+
+.hero {
+    margin-bottom: 28px;
 }
 
-.center-box {
-    max-width: 900px;
-    margin: 50px auto;
-    background: #121212;
-    padding: 40px;
-    border-radius: 8px;
-    border: 1px solid #444;
-    color: #e0e0e0;
-    font-family: monospace;
-    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+.hero h1 {
+    font-size: 28px;
+    margin: 0 0 12px 0;
+}
+
+.hero p {
+    margin: 0 0 16px 0;
+    line-height: 1.5;
+    color: #c5c5c5;
+}
+
+/* Tags under hero */
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #1f2933;
+    color: #9fbbff;
+    border: 1px solid #304056;
+}
+
+/* ====== Content grid ====== */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: #181818;
+    border-radius: 10px;
+    padding: 16px 18px;
+    border: 1px solid #262626;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p,
+.card ul {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #c1c1c1;
+}
+
+.card ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+/* Image card */
+
+.image-card {
+    text-align: center;
 }
 
 .poop-img {
-    width: 100px;
+    width: 120px;
     height: auto;
+    display: block;
+    margin: 0 auto 8px auto;
 }
 
 figure {
-    display: inline-block;
-    text-align: center;
+    margin: 0;
 }
 
+figcaption {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+/* ====== Footer ====== */
+
+.site-footer {
+    text-align: center;
+    margin-top: 24px;
+    padding-top: 14px;
+    border-top: 1px solid #2a2a2a;
+    font-size: 12px
+}
