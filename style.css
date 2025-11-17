@@ -60,7 +60,7 @@ body {
 
 .nav-link:hover {
     background: #1f1f1f;
-    color: #ffffff;
+    color: #72d8ff;
 }
 
 .nav-link.active {
@@ -81,7 +81,7 @@ body {
 }
 
 .nav-cta:hover {
-    background: #72d8ff;
+    background: #1f2933;
     transform: translateY(-1px);
 }
 
